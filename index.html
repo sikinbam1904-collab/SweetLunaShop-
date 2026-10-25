@@ -3721,10 +3721,6 @@
                 showToast('โค้ดสีต้องเป็นรูปแบบ #RRGGBB ทั้ง 7 ช่องค่ะ', 'fa-exclamation-circle');
                 return;
             }
-            if (themeContrast(colors.text, colors.surface) < 4.5) {
-                showToast('สีข้อความกับพื้นการ์ดใกล้กันเกินไป อ่านยากค่ะ', 'fa-exclamation-circle');
-                return;
-            }
             const title = document.getElementById('admPleaseReadTitle').value.trim();
             const message = document.getElementById('admPleaseReadText').value.trim();
             if (!title || !message) {
